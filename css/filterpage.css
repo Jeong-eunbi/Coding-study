@@ -1,0 +1,135 @@
+
+/* 필터 */
+.tab_content .section2{
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px; 
+  grid-gap: 20px;
+  text-align: center; 
+  margin-bottom: 100px; 
+  display: none;
+  margin-top: 50px;
+}
+.tab_content .section2>.menu{
+  
+}
+.tab_content .section2>.menu p{
+  
+}
+.tab_content .section2>.menu img{
+  
+}
+.tab_content .section2>.menu img:hover{
+  filter:blur(5px);
+}
+.tab_content .section2 div{
+  position: relative;
+}
+.tab_content .section2 img{
+  
+  background-size: contain;
+  width: 285px; 
+  height: 300px;
+}
+.tab_content .section2 p{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  
+}
+.tab_content .section2>.menu2{
+  
+}
+.tab_content .section2>.menu2 p{
+  
+}
+.tab_content .section2>.menu2 img:hover{
+  filter:brightness(1.5);
+}
+.tab_content .section2>.menu3{
+  
+}
+.tab_content .section2>.menu3 p{
+  
+}
+.tab_content .section2>.menu3 img{
+  
+}
+.tab_content .section2>.menu3 img:hover{
+  filter:contrast(40%);
+}
+.tab_content .section2>.menu4{
+  
+}
+.tab_content .section2>.menu4 p{
+  
+}
+.tab_content .section2>.menu4 img{
+  
+}
+.tab_content .section2>.menu4 img:hover{
+  filter:drop-shadow(6px 16px 10px black);
+}
+.tab_content .section2>.menu5{
+  
+}
+.tab_content .section2>.menu5 p{
+  
+}
+.tab_content .section2>.menu5 img{
+  
+}
+.tab_content .section2>.menu5 img:hover{
+  filter:grayscale(90%);
+}
+.tab_content .section2>.menu6{
+  
+}
+.tab_content .section2>.menu6 p{
+  
+}
+.tab_content .section2>.menu6 img{
+  
+}
+.tab_content .section2>.menu6 img:hover{
+  filter:hue-rotate(45deg);
+}
+.tab_content .section2>.menu7{
+  
+}
+.tab_content .section2>.menu7 p{
+  
+}
+.tab_content .section2>.menu7 img{
+  
+}
+.tab_content .section2>.menu7 img:hover{
+  filter:invert(100%);
+}
+.tab_content .section2>.menu8{
+  
+}
+.tab_content .section2>.menu8 p{
+  
+}
+.tab_content .section2>.menu8 img{
+  
+}
+.tab_content .section2>.menu8 img:hover{ 
+  filter:saturate(50%);
+}
+.tab_content .section2>.menu9{
+  
+}
+.tab_content .section2>.menu9 p{
+  
+}
+.tab_content .section2>.menu9 img{
+  
+}
+.tab_content .section2>.menu9 img:hover{
+  
+  filter: sepia(50%);
+}

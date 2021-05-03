@@ -1,0 +1,177 @@
+header{
+
+  margin-bottom: 30px;
+}
+header h1{
+
+  text-align: center;
+}
+header h1 a{
+
+  font-size: 50px;
+  line-height: 3;
+}
+/* 탭 메뉴 */
+.tab_content{
+  padding: 50px 0;
+  text-align: center;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"] + label{
+  padding: 20px;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+input[type="radio"]:checked + label{
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 탭 컨텐츠 */
+.tab_content .section{
+  width: 900px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  grid-gap: 20px;
+  margin-top: 50px;
+  display: none;
+}
+
+/* 탭 메뉴 클릭시 컨텐츠 나타나기 */
+
+input[id="tab01"]:checked ~ .section{
+  display: grid;
+}
+input[id="tab02"]:checked ~ .section2{
+  display: grid;
+}
+input[id="tab03"]:checked ~ .section3{
+  display: grid;
+}
+input[id="tab04"]:checked ~ .section4{
+  display: grid;
+}
+input[id="tab05"]:checked ~ .section5{
+  display: grid;
+}
+input[id="tab06"]:checked ~ .section6{
+  display: grid;
+}
+/* 메뉴나타나기 */
+.navbar_menu>li{
+ position: relative;
+}
+.navbar_menu>li:hover div{
+  display: block !important;
+}
+.navbar_menu>li>a{
+  font-size: 20px;
+  font-weight: 700;
+}
+.navbar_menu li>div{
+  border: none !important;
+  display: none !important;
+  position: absolute;
+  top:20px;
+  left: -80px;
+  line-height: 2;
+}
+
+.tab_content .section div{
+  width: 300px;
+  border: 1px solid;
+  box-sizing: border-box;
+  justify-items: center;
+  display: grid;
+  align-items: center;
+}
+.tab_content .section div.menu2{
+
+}
+.tab_content .section div.menu2 p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.tab_content .section div.menu2 p:hover{
+  border-bottom: 2px solid red;
+
+}
+.tab_content .section div.menu3{
+
+  font-size: 20px;
+  font-weight: 700;
+}
+.tab_content .section div.menu3 p{
+
+}
+.tab_content .section div.menu3:hover{
+  background-color: pink;
+  color: white;
+}
+.tab_content .section div.menu4{
+
+  font-size: 20px;
+  font-weight: 700;
+}
+.tab_content .section div.menu4 p{
+
+}
+.tab_content .section div.menu4 p:hover{
+  transform: scale(3);
+
+}
+.tab_content .section div.menu5{
+
+}
+.tab_content .section div.menu5>div{
+  border:none;
+}
+.tab_content .section div.menu5 p{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.tab_content .section div.menu5 p:nth-child(1):hover{
+}
+.tab_content .section div.menu5 p:nth-child(2):hover{
+  opacity: .5;
+}
+.tab_content .section div.menu5 p:nth-child(3):hover{
+  opacity: .1;
+}
+.tab_content .section div.menu6{
+  position: relative;
+}
+.tab_content .section div.menu6:hover::after{
+  content: "";
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+.tab_content .section div.menu6:hover::before{
+  content: "Thank you for visiting";
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+
+}
+.tab_content .section div.menu6 p{
+  position: absolute;
+}
+.tab_content .section div.menu6:hover p{
+  display: none;
+}
+
+.tab_content .section div.menu6 img{
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}

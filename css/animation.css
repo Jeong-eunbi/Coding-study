@@ -1,0 +1,322 @@
+.tab_content .section6{
+  width: 900px;
+  margin: 0 auto;
+  grid-auto-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: none;
+  margin-top: 50px;
+} 
+.tab_content .section6>div{
+  border: 1px solid;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  
+}
+.tab_content .section6>div>div{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  
+  
+}
+.tab_content .section6>div.ani1{
+  
+}
+.tab_content .section6>div.ani1 div{
+  
+  animation-name: size;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes size{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.tab_content .section6>div.ani2{
+  
+}
+.tab_content .section6>div.ani2 div{
+  animation-name: roll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes roll{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.tab_content .section6>div.ani3{
+  
+}
+.tab_content .section6>div.ani3 div{
+  animation-name: cursor;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes cursor{
+  0%{
+    transform: translateY(-30px);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(-30px);
+  }
+  
+}
+.tab_content .section6>div.ani4{
+  
+}
+.tab_content .section6>div.ani4 div{
+  animation-name: opa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes opa{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.tab_content .section6>div.ani5{
+  
+}
+.tab_content .section6>div.ani5 div{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  position: relative;
+  
+}
+@keyframes rollin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.tab_content .section6>div.ani5 div::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transform-origin: 60px 60px;
+  animation: rollin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.tab_content .section6>div.ani6{
+  overflow: hidden;
+}
+.tab_content .section6>div.ani6 div{
+  animation: goaway;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: backwards;
+  /*! transform-origin: 0 0; */
+  
+  
+}
+@keyframes goaway{
+100%{
+  transform: translateX(-150px) scale(0.5);
+  opacity: 0;
+  }
+}
+.tab_content .section6>div.ani7{
+  
+}
+.tab_content .section6>div.ani7 div{
+  animation-name:pyo;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  
+}
+@keyframes pyo{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.tab_content .section6>div.ani8{
+  perspective: 300px;
+}
+.tab_content .section6>div.ani8 div{
+/*   transform: translate(-50%, -50%); */
+  animation-name: turn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+@keyframes turn{
+  50%{
+    transform:  rotateX(180deg) rotateY(0deg);
+    
+  }
+  100%{
+    transform: rotateX(180deg) rotateY(-180deg);
+  }
+}
+  
+.tab_content .section6>div.ani9{
+  
+}
+.tab_content .section6>div.ani9 div{
+  animation-name:change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 200px;
+  height: 200px;
+  transition:all 3s;
+}
+@keyframes change{
+  0%{
+    background-image: url(../img/color1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  50%{
+    background-image: url(../img/color2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  100%{
+    background-image: url(../img/color3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.tab_content .section6>div.ani10{
+  
+}
+.tab_content .section6>div.ani10 h1{
+
+ font-size: 80px;
+ color: transparent;
+ background:url(../img/rainbow.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-clip: text;
+ -webkit-background-clip: text;
+ color: rgba(0,0,0,.2);
+ animation:hello;
+ animation-iteration-count: infinite;
+ animation-duration: 2s;
+}
+@keyframes hello{
+  0%{
+    background-position: top center;
+  }
+  100%{
+   background-position:  bottom center;
+  }
+}
+
+.tab_content .section6>div.ani11{
+  display: inline-flex;
+  justify-content: center;
+}
+.tab_content .section6>div.ani11 span{
+  animation:textup;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  position: relative;
+  letter-spacing: 20px;
+  font-size: 50px;
+}
+.tab_content .section6>div.ani11 span:nth-child(1){
+  animation-delay:0.1s;
+}
+.tab_content .section6>div.ani11 span:nth-child(2){ 
+  animation-delay:0.2s;
+}
+.tab_content .section6>div.ani11 span:nth-child(3){
+  animation-delay:0.3s;
+}
+.tab_content .section6>div.ani11 span:nth-child(4){
+  animation-delay:0.4s;
+}
+.tab_content .section6>div.ani11 span:nth-child(5){
+  animation-delay:0.5s;
+}
+@keyframes textup {
+    0% {top:0;}
+    20% {top:-1rem;}
+    40% {top:0}
+    60% {top:0}
+    80% {top:0}
+    100% {top:0}
+}
+
+.tab_content .section6>div.ani12{
+    display: inline-flex;
+  justify-content: center;
+}
+.tab_content .section6>div.ani12 span{
+  animation:twinkle;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  letter-spacing: 20px;
+  font-size: 50px;
+  transition-property: color opacity;
+}
+@keyframes twinkle{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.tab_content .section6>div.ani12 span:nth-child(1){
+  color:red;
+  animation-delay: .1s;
+}
+.tab_content .section6>div.ani12 span:nth-child(2){ 
+  color:orange; 
+  animation-delay: .2s;
+}
+.tab_content .section6>div.ani12 span:nth-child(3){
+  color:green;
+  animation-delay: .3s;
+}
+.tab_content .section6>div.ani12 span:nth-child(4){
+ color:skyblue;
+  animation-delay: .4s;
+}
+.tab_content .section6>div.ani12 span:nth-child(5){
+ color:purple;
+  animation-delay: .5s;
+}

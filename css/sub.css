@@ -1,0 +1,211 @@
+@charset "UTF-8";
+a{
+
+  text-decoration: none;
+  color: #000;
+}
+header{
+
+  overflow: hidden;
+  position: fixed;
+  padding: 20px 0 0 0;
+  z-index: 10;
+/*  위로 올라가도록 z-index  */
+/*  width 100%  */
+  width: 100%;
+}
+header h1{
+
+  float: left;
+  background: url(../img/logowhite.svg) no-repeat;
+  width: 10%;
+  height: 45px;
+  text-indent: -9999px;
+  margin-left: 2%; 
+  background-size: 180px;
+/*  background size 조절, height조절, width조절*/
+}
+header nav{
+
+  text-align: center;
+  float: left;
+  width: 75%; 
+/*  width 조절 */
+}
+header nav ul{
+
+}
+header nav ul li{
+
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px;
+}
+header nav ul li a{
+
+  font-weight: 500;
+  color: #fff;
+  padding: 20px;
+/*  클릭범위 넓히기 위해 padding 추가  */
+}
+header span{
+
+  float: right;
+  padding: 20px 0;
+  width: 10%;
+  text-align: center;
+/*  width 조절  */
+  margin-right: 2%;
+/*  로고와 동일하게 margin-right 2%  */
+  color: ;
+}
+header span a{
+
+  color: #fff;
+}
+header span a+a::before{
+  content: "|";
+ 
+  display: inline-block;
+  width: 10px;
+  color: #999;
+  margin-right: 5px;
+} 
+
+main{
+
+  height: 900px;
+/*  Q)height가 왜 %로 안먹지? */
+  width: 100%;
+} 
+main .slide{
+
+  background: url(../img/im.jpg) no-repeat;
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+}
+main .slide::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+  
+}
+main .slide ul{
+
+}
+main .slide ul li{
+
+}
+main .slide ul li p{
+
+}
+main .slide>div{
+
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 105.5px);
+  left: calc(50% - 274.6954px);
+}
+main .slide>div h2{
+
+  font-size: 60px;
+  color: #fff;
+  line-height: 2;
+  font-weight: bold;
+}
+main .slide>div h3{
+
+  font-size: 25px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+main .slide>div span{
+
+  color: #fff;
+  /*! border: 1px; */
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  display: inline-block;
+  width: 160px; 
+  line-height: 2;
+}
+main .news{
+
+  height: 20%;
+  overflow: hidden; 
+}
+main .news button{
+
+  float: left;
+  padding: 30px;
+  width: 150px;
+  border: none;
+  background-color: #002854;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer; 
+} 
+main .news button:nth-child(1)::before{
+  content:"<";
+  
+  
+  margin-right: 15px;
+}
+main .news button:nth-child(2)::after{
+   content:">";
+   margin-left: 15px;
+}
+main .news h4{
+ 
+  float: left;
+  line-height: 4.5;
+  padding: 2px;
+  width: 180px;
+  text-align: right;
+  font-weight: bold; 
+}
+main .news h4:after{
+  content: "|";
+  
+  font-weight: normal;
+  margin-left: 20px;
+  color: #ccc;
+}
+main .news ul{
+
+  float: left;
+  margin-left: 20px;
+}
+main .news ul li{
+ position: relative;
+}
+main .news ul li::before{
+  content:"∧";
+  position: absolute;
+  font-weight: bold;
+  top: 10px;
+  font-size: 25px;
+  right: -500px;
+  cursor: pointer;
+}
+main .news ul li::after{
+  content:"∨";
+  position: absolute;
+  font-weight: bold;
+    top: 40px;
+   font-size: 25px;
+  right: -500px;
+  cursor: pointer;
+}
+main .news ul li+li{
+  display: none;
+}
+main .news ul li a{
+
+  line-height: 4.5;
+  padding: 2px;
+}
+
